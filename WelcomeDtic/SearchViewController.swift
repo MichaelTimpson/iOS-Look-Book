@@ -9,7 +9,11 @@
 import UIKit
 
 var titles = ["DoD S&E Reports", "Pub Defense", "DoD Grant Awards", "DoD Information Analysis Centers", "NDIA Conference Proceedings"]
-var descriptions = ["PubDefense provides access to journal articles that are the result of DoD and ODNI/IARPA-funded research.\n\n -The database contains an initial collection of published journal articles and accepted manuscripts.\n\n -Additional metadata, full-text, and links to documents will be added as they are submitted to DTIC.\n\n -Access to the DoD and ODNI/IARPA-funded full-text of items in this collection will be available after a 12-month embargo.", "2", "3", "For over 72 years, the IACs have served as an essential resource to affordably access technical data and analysis in support of current operations.  IACs are research and analysis organizations chartered by the DoD to provide Research and Analysis services and Agile and Scalable Contracting services through integrated Scientific and Technical Information (STI) development and dissemination, studies and analyses, and other unique scientific and technical activities.", "5", "6"]
+
+// place holder for images
+var tempImages: [Image] = []
+var descriptions = ["1", "PubDefense provides access to journal articles that are the result of DoD and ODNI/IARPA-funded research.\n\n -The database contains an initial collection of published journal articles and accepted manuscripts.\n\n -Additional metadata, full-text, and links to documents will be added as they are submitted to DTIC.\n\n -Access to the DoD and ODNI/IARPA-funded full-text of items in this collection will be available after a 12-month embargo.", "3", "For over 72 years, the IACs have served as an essential resource to affordably access technical data and analysis in support of current operations.  IACs are research and analysis organizations chartered by the DoD to provide Research and Analysis services and Agile and Scalable Contracting services through integrated Scientific and Technical Information (STI) development and dissemination, studies and analyses, and other unique scientific and technical activities.", "5", "63"]
+var titlelinks = ["https://publicaccess.dtic.mil", "2", "3", "http://iac.dtic.mil/", "5", "6"]
 var myIndex = 0
 
 class SearchViewController: UIViewController {
@@ -17,7 +21,6 @@ class SearchViewController: UIViewController {
     var images: [Image] = []
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,7 @@ class SearchViewController: UIViewController {
     }
     
     func createArrary() -> [Image] {
-        var tempImages: [Image] = []
+       // tempImages: [Image] = []
         
         let image1 = Image(image: #imageLiteral(resourceName: "searchicon_108x108"), title: "DoD S&E Reports", text: "Discover pubicly available DoD research projects, documents, budget narratives and other data.")
         let image2 = Image(image: #imageLiteral(resourceName: "pubdefenseicon_108x108"), title: "Pub Defense", text: "Access to DOD‐ and ODNI/IARPA‐funded scholarly publications")
