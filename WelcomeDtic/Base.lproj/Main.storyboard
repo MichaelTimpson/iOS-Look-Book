@@ -214,7 +214,7 @@
             </objects>
             <point key="canvasLocation" x="-492" y="133.5832083958021"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Search & Discover-->
         <scene sceneID="9bf-cI-ZG4">
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="iV5-9m-COf" customClass="SearchViewController" customModule="WelcomeDtic" customModuleProvider="target" sceneMemberID="viewController">
@@ -320,7 +320,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="e3L-8E-id1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="knR-CW-hg9"/>
+                    <tabBarItem key="tabBarItem" title="Search &amp; Discover" image="eye" id="knR-CW-hg9"/>
                     <connections>
                         <outlet property="tableView" destination="ugu-jO-9Nh" id="Wvd-iX-snf"/>
                         <segue destination="ZQm-E7-A7Y" kind="show" identifier="segue" id="IXJ-WY-ada"/>
@@ -400,11 +400,17 @@
                                 <rect key="frame" x="38" y="73" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo7-VP-36N">
-                                <rect key="frame" x="96" y="102" width="279" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo7-VP-36N">
+                                <rect key="frame" x="107" y="102" width="279" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.20000000000000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Arial-BoldMT"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -422,7 +428,7 @@
             </objects>
             <point key="canvasLocation" x="4284" y="-624.73763118440786"/>
         </scene>
-        <!--Resource View Controller-->
+        <!--Collaboration & Partnership-->
         <scene sceneID="73V-mT-v2Y">
             <objects>
                 <viewController storyboardIdentifier="ResourceViewController" id="8cT-eI-4mz" customClass="ResourceViewController" customModule="WelcomeDtic" customModuleProvider="target" sceneMemberID="viewController">
@@ -528,7 +534,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6zO-4E-6Iw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="SHG-nw-Gdi"/>
+                    <tabBarItem key="tabBarItem" title="Collaboration &amp; Partnership" image="users" id="SHG-nw-Gdi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N56-vF-YhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -556,7 +562,7 @@
             </objects>
             <point key="canvasLocation" x="1044" y="134"/>
         </scene>
-        <!--Collaboration View Controller-->
+        <!--Budget-->
         <scene sceneID="n9t-hY-csG">
             <objects>
                 <viewController storyboardIdentifier="CollaborationViewController" id="prE-lM-qHW" customClass="CollaborationViewController" customModule="WelcomeDtic" customModuleProvider="target" sceneMemberID="viewController">
@@ -662,13 +668,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="kMc-jv-MK2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="CRm-pS-tFr"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="chart-area" id="CRm-pS-tFr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yq-Dm-vxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2977" y="1951"/>
         </scene>
-        <!--Budget View Controller-->
+        <!--DTIC Rescources-->
         <scene sceneID="2X9-bm-7X6">
             <objects>
                 <viewController storyboardIdentifier="BudgetViewController" id="uJh-0V-aer" customClass="BudgetViewController" customModule="WelcomeDtic" customModuleProvider="target" sceneMemberID="viewController">
@@ -774,7 +780,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Sbf-Qo-Zuy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="bLh-4c-UOS"/>
+                    <tabBarItem key="tabBarItem" title="DTIC Rescources" image="cogs" id="bLh-4c-UOS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRm-dB-Rmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -783,13 +789,17 @@
     </scenes>
     <resources>
         <image name="DodCongressionalBudget" width="262" height="262"/>
+        <image name="chart-area" width="53" height="40"/>
+        <image name="cogs" width="50" height="40"/>
         <image name="envelope-square" width="40" height="40"/>
+        <image name="eye" width="53" height="34"/>
         <image name="facebook-square" width="40" height="40"/>
         <image name="largedoubleseals" width="434" height="234"/>
         <image name="linkedin" width="40" height="40"/>
         <image name="twitter-square" width="40" height="40"/>
+        <image name="users" width="57" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZDp-PT-IVh"/>
+        <segue reference="OEU-f2-tcs"/>
     </inferredMetricsTieBreakers>
 </document>
