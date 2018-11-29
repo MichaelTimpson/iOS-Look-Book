@@ -12,6 +12,7 @@
 		7719217421A5053B0063F28D /* CollaborationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719217321A5053B0063F28D /* CollaborationViewController.swift */; };
 		77676F882193860B005C70CE /* LandingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77676F872193860B005C70CE /* LandingTabBarController.swift */; };
 		777A29302196075A0097C59E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777A292F2196075A0097C59E /* SearchViewController.swift */; };
+		778B6E7A21AF719A004F492C /* ExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778B6E7921AF719A004F492C /* ExpandedViewController.swift */; };
 		7790F9032190DE3F003ABBD4 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7790F9022190DE3F003ABBD4 /* HomeScreenViewController.swift */; };
 		77C9E16A219B38FA002FAE39 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9E169219B38FA002FAE39 /* CategoryRow.swift */; };
 		77D55201219B8DC700C537E2 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D55200219B8DC700C537E2 /* ListViewCell.swift */; };
@@ -48,6 +49,7 @@
 		7719217321A5053B0063F28D /* CollaborationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollaborationViewController.swift; sourceTree = "<group>"; };
 		77676F872193860B005C70CE /* LandingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabBarController.swift; sourceTree = "<group>"; };
 		777A292F2196075A0097C59E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		778B6E7921AF719A004F492C /* ExpandedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedViewController.swift; sourceTree = "<group>"; };
 		7790F9022190DE3F003ABBD4 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		77C9E169219B38FA002FAE39 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		77D55200219B8DC700C537E2 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				77F8E177218A6DAA003E29B5 /* LogInViewController.swift */,
 				777A292F2196075A0097C59E /* SearchViewController.swift */,
 				7719216F21A5004A0063F28D /* ResourceViewController.swift */,
+				778B6E7921AF719A004F492C /* ExpandedViewController.swift */,
 				77F8E179218A6DAA003E29B5 /* Main.storyboard */,
 				7719217321A5053B0063F28D /* CollaborationViewController.swift */,
 				77D55202219B945500C537E2 /* Image.swift */,
@@ -289,6 +292,7 @@
 				777A29302196075A0097C59E /* SearchViewController.swift in Sources */,
 				77D55203219B945500C537E2 /* Image.swift in Sources */,
 				7719217421A5053B0063F28D /* CollaborationViewController.swift in Sources */,
+				778B6E7A21AF719A004F492C /* ExpandedViewController.swift in Sources */,
 				77F8E178218A6DAA003E29B5 /* LogInViewController.swift in Sources */,
 				77676F882193860B005C70CE /* LandingTabBarController.swift in Sources */,
 				77F8E176218A6DA9003E29B5 /* AppDelegate.swift in Sources */,
