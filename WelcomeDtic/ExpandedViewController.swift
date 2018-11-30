@@ -13,8 +13,8 @@ class ExpandedViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
-    @IBOutlet weak var titleLink: UILabel!
     @IBOutlet weak var titleImage: UIImageView!
+    @IBOutlet weak var titleLink: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,9 @@ class ExpandedViewController: UIViewController {
         titleLabel.text = titles[myIndex]
         descLabel.text = descriptions[myIndex]
         titleLink.text = titlelinks[myIndex]
+        titleLink.isEditable = false;
+        titleLink.dataDetectorTypes = UIDataDetectorTypes.all;
+
         
         titleImage.image = tempImages[myIndex].image
         
