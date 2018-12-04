@@ -12,7 +12,8 @@ var titles = ["DoD S&E Reports", "PubDefense", "DoD Grant Awards", "DoD Informat
 
 // place holder for images
 var tempImages: [Image] = []
-var descriptions = ["1", "PubDefense provides access to journal articles that are the result of DoD and ODNI/IARPA-funded research.\n\n -The database contains an initial collection of published journal articles and accepted manuscripts.\n\n -Additional metadata, full-text, and links to documents will be added as they are submitted to DTIC.\n\n -Access to the DoD and ODNI/IARPA-funded full-text of items in this collection will be available after a 12-month embargo.", "3", "For over 72 years, the IACs have served as an essential resource to affordably access technical data and analysis in support of current operations.  IACs are research and analysis organizations chartered by the DoD to provide Research and Analysis services and Agile and Scalable Contracting services through integrated Scientific and Technical Information (STI) development and dissemination, studies and analyses, and other unique scientific and technical activities.", "5", "63"]
+var tempScreenShotImages: [Image] = []
+var descriptions = ["Construction", "PubDefense provides access to journal articles that are the result of DoD and ODNI/IARPA-funded research.\n\n -The database contains an initial collection of published journal articles and accepted manuscripts.\n\n -Additional metadata, full-text, and links to documents will be added as they are submitted to DTIC.\n\n -Access to the DoD and ODNI/IARPA-funded full-text of items in this collection will be available after a 12-month embargo.", "Construction", "For over 72 years, the IACs have served as an essential resource to affordably access technical data and analysis in support of current operations.  IACs are research and analysis organizations chartered by the DoD to provide Research and Analysis services and Agile and Scalable Contracting services through integrated Scientific and Technical Information (STI) development and dissemination, studies and analyses, and other unique scientific and technical activities.", "Construction", "Construction"]
 var titlelinks = ["https://search.usa.gov/search/", "https://publicaccess.dtic.mil", "https://dodgrantawards.dtic.mil/", "https://dodiac.dtic.mil/", "https://ndia.dtic.mil/"]
 var myIndex = 0
 
@@ -25,11 +26,27 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         images = createArrary()
-
+        tempScreenShotImages = createScreenShotArray()
+        
         // Do any additional setup after loading the view, typically from a nib.
         print("SearchViewLoaded")
         tableView.showsVerticalScrollIndicator = false
         navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func createScreenShotArray() -> [Image] {
+        let image1 = Image(image: #imageLiteral(resourceName: "pubdefensescreen"), title: "", text: "")
+        let image2 = Image(image: #imageLiteral(resourceName: "pubdefensescreen"), title: "", text: "")
+        let image3 = Image(image: #imageLiteral(resourceName: "pubdefensescreen"), title: "", text: "")
+        let image4 = Image(image: #imageLiteral(resourceName: "pubdefensescreen"), title: "", text: "")
+        let image5 = Image(image: #imageLiteral(resourceName: "pubdefensescreen"), title: "", text: "")
+        
+        tempScreenShotImages.append(image1)
+        tempScreenShotImages.append(image2)
+        tempScreenShotImages.append(image3)
+        tempScreenShotImages.append(image4)
+        tempScreenShotImages.append(image5)
+        return tempScreenShotImages
     }
     
     func createArrary() -> [Image] {

@@ -15,6 +15,7 @@ class ExpandedViewController: UIViewController {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var titleImage: UIImageView!
     @IBOutlet weak var titleLink: UITextView!
+    @IBOutlet weak var screenShotImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,7 @@ class ExpandedViewController: UIViewController {
 
         
         titleImage.image = tempImages[myIndex].image
+        screenShotImage.image = tempScreenShotImages[myIndex].image
         
         
         // Do any additional setup after loading the view, typically from a nib.
